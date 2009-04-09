@@ -224,7 +224,7 @@ WireIt.WiringEditor.prototype = {
  renderButtons: function() {
     var toolbar = Dom.get('toolbar');
     // Buttons :
-    var newButton = new widget.Button({ label:"New", id:"WiringEditor-newButton", container: toolbar });
+    var newButton = new widget.Button({ label:"New Diagram", id:"WiringEditor-newButton", container: toolbar });
     newButton.on("click", this.onNew, this, true);
 
     var saveButton = new widget.Button({ label:"Save", id:"WiringEditor-saveButton", container: toolbar });
