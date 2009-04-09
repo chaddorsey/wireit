@@ -28,8 +28,8 @@ var demoLanguage = {
 	   			{"type":"url", "inputParams": {"label": "Website", "name":"website", "size": 25}} 
 	   		],
 	   		"legend": "Tell us about yourself..."
-	   	}
-	   },
+	   	},
+	   
 
 	      {
 	         "name": "AND gate",
