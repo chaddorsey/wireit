@@ -16,18 +16,77 @@ var jsBox = {
 		      "container": {"xtype": "jsBox.Container"}
 		   },
 			{
-				"name": "AND",
+				"name": "World",
 
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
-					"image": "../logicGates/images/gate_and.png",
+					"image": "../MySystem-demo/images/world-transp.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "_INPUT1", "direction": [-1,0], "offsetPosition": {"left": -3, "top": 2 },"ddConfig": {"type": "input","allowedTypes": ["output"]}, "nMaxWires": 1 },
- 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "_INPUT2", "direction": [-1,0], "offsetPosition": {"left": -3, "top": 37 },"ddConfig": {"type": "input","allowedTypes": ["output"]}},
- 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "_OUTPUT", "direction": [1,0], "offsetPosition": {"left": 103, "top": 20 },"ddConfig": {"type": "output","allowedTypes": ["input"]}}
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
  				]
 				}
-			}
+			},
+			{
+				"name": "Egg",
+
+				"container" : {
+					"xtype":"WireIt.ImageContainer", 
+					"image": "../MySystem-demo/images/egg-transp-70.png",
+
+ 				"terminals": [
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 12, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}},
+					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 12, "bottom": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
+ 				],
+				}
+			},
+			{
+				"name": "Burner",
+
+				"container" : {
+					"xtype":"WireIt.ImageContainer", 
+					"image": "../MySystem-demo/images/burner-transp-70.png",
+ 				"terminals": [
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}},
+					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
+ 				]
+				}
+			},
+			{
+				"name": "Power Plant",
+
+				"container" : {
+					"xtype":"WireIt.ImageContainer", 
+					"image": "../MySystem-demo/images/power-plant-70.png",
+ 				"terminals": [
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}},
+					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
+ 				]
+				}
+			},
+			{
+				"name": "Water",
+
+				"container" : {
+					"xtype":"WireIt.ImageContainer", 
+					"image": "../MySystem-demo/images/water-70.png",
+ 				"terminals": [
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 40, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}},
+					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 40, "bottom": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
+ 				]
+				}
+			},
+			{
+				"name": "Pot",
+
+				"container" : {
+					"xtype":"WireIt.ImageContainer", 
+					"image": "../MySystem-demo/images/pot-70.png",
+ 				"terminals": [
+ 					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}},
+					{"wireConfig": {"drawingMethod": "arrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "input","allowedTypes": ["input"]}}
+ 				]
+				}
+			},
 		]
 	},
    
