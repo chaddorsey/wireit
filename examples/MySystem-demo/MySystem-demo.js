@@ -16,6 +16,10 @@ var jsBox = {
 		      "container": {"xtype": "jsBox.Container"}
 		   },
 			{
+		      "name": "Energy Transfer Label",
+		      "container": {"xtype": "jsBox.Container"}
+		   },
+			{
 				"name": "World",
 
 				"container" : {
