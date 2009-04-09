@@ -227,14 +227,8 @@ WireIt.WiringEditor.prototype = {
     var newButton = new widget.Button({ label:"New", id:"WiringEditor-newButton", container: toolbar });
     newButton.on("click", this.onNew, this, true);
 
-    var loadButton = new widget.Button({ label:"Load", id:"WiringEditor-loadButton", container: toolbar });
-    loadButton.on("click", this.onLoad, this, true);
-
     var saveButton = new widget.Button({ label:"Save", id:"WiringEditor-saveButton", container: toolbar });
     saveButton.on("click", this.onSave, this, true);
-
-    var deleteButton = new widget.Button({ label:"Delete", id:"WiringEditor-deleteButton", container: toolbar });
-    deleteButton.on("click", this.onDelete, this, true);
 
     var helpButton = new widget.Button({ label:"Help", id:"WiringEditor-helpButton", container: toolbar });
     helpButton.on("click", this.onHelp, this, true);
@@ -321,16 +315,18 @@ WireIt.WiringEditor.prototype = {
   * @method onNew
   */
  onNew: function() {
+	if( confirm("Are you sure you want to erase your diagram and start fresh?") ) {
     this.layer.removeAllContainers();
     
      this.propertiesForm.clear();
+	}
  },
 
  /**
   * @method onDelete
   */
  onDelete: function() {
-    if( confirm("Are you sure you want to delete this wiring ?") ) {
+    if( confirm("Are you sure you want to delete this wiring??") ) {
        
       var value = this.getValue();
  		this.service.deleteWiring({name: value.name, language: this.options.languageName},{
