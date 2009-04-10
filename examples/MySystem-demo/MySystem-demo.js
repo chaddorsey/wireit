@@ -26,7 +26,7 @@ var jsBox = {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/world-transp.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}}
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}}
  				]
 				}
 			},
@@ -38,7 +38,7 @@ var jsBox = {
 					"image": "../MySystem-demo/images/egg-transp-70.png",
 
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 12, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 12, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,1], "offsetPosition": {"left": 12, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
  				],
 				}
@@ -50,7 +50,7 @@ var jsBox = {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/burner-transp-70.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
  				]
 				}
@@ -62,7 +62,7 @@ var jsBox = {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/power-plant-70.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
  				]
 				}
@@ -74,7 +74,7 @@ var jsBox = {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/water-70.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 40, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 40, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,1], "offsetPosition": {"left": 40, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
  				]
 				}
@@ -86,7 +86,7 @@ var jsBox = {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/pot-70.png",
  				"terminals": [
- 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [1,0], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input","output"]}},
+ 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input","output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "World", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
  				]
 				}
