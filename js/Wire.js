@@ -71,7 +71,7 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
       this.options.className = options.className || 'WireIt-Wire';
       this.options.coeffMulDirection = YAHOO.lang.isUndefined(options.coeffMulDirection) ? 100 : options.coeffMulDirection;
 
-      // Syling
+      // Styling
       this.options.drawingMethod = options.drawingMethod || 'bezier';
       this.options.cap = options.cap || 'round';
       this.options.bordercap = options.bordercap || 'round';
