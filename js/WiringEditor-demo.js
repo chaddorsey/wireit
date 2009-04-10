@@ -147,7 +147,7 @@ WireIt.WiringEditor.prototype = {
 	        units: [
 	          { position: 'top', height: 50, body: 'top'},
 	          { position: 'left', width: 200, resize: true, body: 'left', gutter: '5px', collapse: true, 
-	            collapseSize: 25, header: 'Modules', scroll: true, animate: true },
+	            collapseSize: 25, header: 'Objects and Labels', scroll: true, animate: true },
 	          { position: 'center', body: 'center', gutter: '5px' },
 	          { position: 'right', width: 320, resize: true, body: 'right', gutter: '5px', collapse: true, 
 	             collapseSize: 25, header: 'Properties', scroll: true, animate: true }
@@ -224,13 +224,15 @@ WireIt.WiringEditor.prototype = {
  renderButtons: function() {
     var toolbar = Dom.get('toolbar');
     // Buttons :
-    var newButton = new widget.Button({ label:"New Diagram", id:"WiringEditor-newButton", container: toolbar });
+    var newButton = new widget.Button({ label:"Clear Diagram", id:"WiringEditor-newButton", container: toolbar });
     newButton.on("click", this.onNew, this, true);
 
+/* Not working yet
     var saveButton = new widget.Button({ label:"Save", id:"WiringEditor-saveButton", container: toolbar });
     saveButton.on("click", this.onSave, this, true);
+*/
 
-    var helpButton = new widget.Button({ label:"Help", id:"WiringEditor-helpButton", container: toolbar });
+    var helpButton = new widget.Button({ label:"More Info", id:"WiringEditor-helpButton", container: toolbar });
     helpButton.on("click", this.onHelp, this, true);
  },
 
