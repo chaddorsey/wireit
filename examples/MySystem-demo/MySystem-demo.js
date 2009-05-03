@@ -25,6 +25,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/world-transp.png",
+					"icon": "../MySystem-demo/images/world-transp.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}}
  				]
@@ -36,7 +37,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/egg-transp-70.png",
-
+					"icon": "../MySystem-demo/images/egg-transp-70.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 12, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,1], "offsetPosition": {"left": 12, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
@@ -49,6 +50,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/burner-transp-70.png",
+					"icon": "../MySystem-demo/images/burner-transp-70.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
@@ -61,6 +63,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/power-plant-70.png",
+					"icon": "../MySystem-demo/images/power-plant-70.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
@@ -73,6 +76,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/water-70.png",
+					"icon": "../MySystem-demo/images/water-70.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 40, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input", "output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,1], "offsetPosition": {"left": 40, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
@@ -85,6 +89,7 @@ var jsBox = {
 				"container" : {
 					"xtype":"WireIt.ImageContainer", 
 					"image": "../MySystem-demo/images/pot-70.png",
+					"icon": "../MySystem-demo/images/pot-70.png",
  				"terminals": [
  					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,-1], "offsetPosition": {"left": 20, "top": -25 },"ddConfig": {"type": "input","allowedTypes": ["input","output"]}},
 					{"wireConfig": {"drawingMethod": "bezierArrows"}, "name": "Drag me to another object's terminal to show energy transfer", "direction": [0,1], "offsetPosition": {"left": 20, "bottom": -25 },"ddConfig": {"type": "output","allowedTypes": ["input", "output"]}}
