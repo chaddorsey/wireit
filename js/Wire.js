@@ -167,7 +167,8 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
          bezierPoints[i][0] = bezierPoints[i][0]-min[0];
          bezierPoints[i][1] = bezierPoints[i][1]-min[1];
       }
-   
+   	
+		
       // Draw the border
       ctxt.lineCap = this.options.bordercap;
       ctxt.strokeStyle = this.options.bordercolor;
@@ -207,7 +208,10 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
    drawBezierArrows: function() {
 	  //From drawArrows function
-	  var d = 7; // arrow width/2
+
+	 	var arrowWidth = Math.round(this.options.width * 1.5 + 20);
+		var arrowLength = Math.round(this.options.width * 1.2 + 20);
+	  	var d = arrowWidth/2; // arrow width/2
       var redim = d+3; //we have to make the canvas a little bigger because of arrows
       var margin=[4+redim,4+redim];
 
@@ -276,7 +280,7 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
       ctxt.lineWidth = this.options.width+this.options.borderwidth*2;
       ctxt.beginPath();
       ctxt.moveTo(bezierPoints[0][0],bezierPoints[0][1]);
-      ctxt.bezierCurveTo(bezierPoints[1][0],bezierPoints[1][1],bezierPoints[2][0],bezierPoints[2][1],bezierPoints[3][0],bezierPoints[3][1]);
+      ctxt.bezierCurveTo(bezierPoints[1][0],bezierPoints[1][1],bezierPoints[2][0],bezierPoints[2][1],bezierPoints[3][0],bezierPoints[3][1]+arrowLength/2*this.terminal2.options.direction[1]);
       ctxt.stroke();
 
       // Draw the inner bezier curve
@@ -285,16 +289,16 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
       ctxt.lineWidth = this.options.width;
       ctxt.beginPath();
       ctxt.moveTo(bezierPoints[0][0],bezierPoints[0][1]);
-      ctxt.bezierCurveTo(bezierPoints[1][0],bezierPoints[1][1],bezierPoints[2][0],bezierPoints[2][1],bezierPoints[3][0],bezierPoints[3][1]);
+      ctxt.bezierCurveTo(bezierPoints[1][0],bezierPoints[1][1],bezierPoints[2][0],bezierPoints[2][1],bezierPoints[3][0],bezierPoints[3][1]+arrowLength/2*this.terminal2.options.direction[1]);
       ctxt.stroke();
 
 	//Variables from drawArrows
 	//var t1 = p1;
-	var t1 = bezierPoints[2]
+		var t1 = bezierPoints[2]
    	var t2 = p2;
 
    	var z = [0,0]; //point on the wire with constant distance (dlug) from terminal2
-   	var dlug = 20; //arrow length
+   	var dlug = arrowLength; //arrow length
    	var t = 1-(dlug/distance);
    	z[0] = Math.abs( t1[0] +  t*(t2[0]-t1[0]) );
    	z[1] = Math.abs( t1[1] + t*(t2[1]-t1[1]) );	
