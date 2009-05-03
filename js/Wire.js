@@ -663,10 +663,17 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
    onWireClick: function(x,y) {
  	   console.log("onWireClick",x,y);
+		wd = this.options.width;
+		nwd = wd + 2;
+		this.options.width = nwd;
+		this.redraw();
+		console.log("New Wire Width = ", nwd);
    },
 
    onWireDblClick: function(x,y) {
  	   console.log("onWireDblClick",x,y);
+		this.options.width = 3;
+		this.redraw;
    }
    
 	
