@@ -649,6 +649,11 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
       }
    },
    
+	onDblClick: function(x,y) {
+		if( this.wireDrawnAt(x,y) ) {
+			this.onWireDblClick(x,y);
+		}
+	},
    /**
     * When the mouse clicked on the wire
     * Note: this will only work within a layer
@@ -658,8 +663,13 @@ YAHOO.lang.extend(WireIt.Wire, WireIt.CanvasElement, {
     */
    onWireClick: function(x,y) {
  	   console.log("onWireClick",x,y);
+   },
+
+   onWireDblClick: function(x,y) {
+ 	   console.log("onWireDblClick",x,y);
    }
    
+	
 
 
 });

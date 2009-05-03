@@ -234,6 +234,7 @@ WireIt.Layer.prototype = {
          if(this.options.enableMouseEvents) {
             YAHOO.util.Event.addListener(wire.element, "mousemove", this.onWireMouseMove, this, true);
             YAHOO.util.Event.addListener(wire.element, "click", this.onWireClick, this, true);
+            YAHOO.util.Event.addListener(wire.element, "dblclick", this.onWireDblClick, this, true);
          }
          
          // Re-Fire an event at the layer level
@@ -351,6 +352,26 @@ WireIt.Layer.prototype = {
    	   if( lx >= elx && lx < elx+w.element.width && ly >= ely && ly < ely+w.element.height ) {
    	      var rx = lx-elx, ry = ly-ely; // relative to the canvas
    			w.onClick(rx,ry);
+   	   }
+   	}
+   },
+
+   /**
+    * Handles double click on any wire canvas
+    * Note: we treat mouse events globally so that wires behind others can still receive the events
+    * @method onWireDblClick
+    * @param {Event} e Mouse click event
+    */
+   onWireDblClick: function(e) {
+      var p = this._getMouseEvtPos(e);
+   	var lx = p[0], ly = p[1], n = this.wires.length, w;
+   	for(var i = 0 ; i < n ; i++) {
+   	   w = this.wires[i];
+      	var elx = w.element.offsetLeft, ely = w.element.offsetTop;
+      	// Check if the mouse is within the canvas boundaries
+   	   if( lx >= elx && lx < elx+w.element.width && ly >= ely && ly < ely+w.element.height ) {
+   	      var rx = lx-elx, ry = ly-ely; // relative to the canvas
+   			w.onDblClick(rx,ry);
    	   }
    	}
    },
