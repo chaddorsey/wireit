@@ -98,6 +98,31 @@ body {
    margin-left: 5px;
 }
 
+.WiringEditor-icon-module {
+   cursor: pointer;
+   margin: 6px;
+   padding: 2px;
+   font-size: 9pt;
+   -moz-border-radius: 2px;
+   height: 80px;
+	width: 80px;
+   text-align: left;
+	float:left;
+}
+
+#left .WiringEditor-icon-module:hover {
+   color: red;
+}
+
+.WiringEditor-icon-module img {
+   margin-left: 5px;
+}
+
+.WiringEditor-icon-module span {
+   margin-left: 25px;
+	float: left;
+}
+
 #moduleProxy {
    opacity: 0.8;
    filter: alpha(opacity = 80);
