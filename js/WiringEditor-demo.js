@@ -146,7 +146,7 @@ WireIt.WiringEditor.prototype = {
     this.options.layoutOptions = options.layoutOptions || {
 	        units: [
 	          { position: 'top', height: 50, body: 'top'},
-	          { position: 'left', width: 200, resize: true, body: 'left', gutter: '5px', collapse: true, 
+	          { position: 'left', width: 225, resize: true, body: 'left', gutter: '5px', collapse: true, 
 	            collapseSize: 25, header: 'Objects and Labels', scroll: true, animate: true },
 	          { position: 'center', body: 'center', gutter: '5px' },
 	          { position: 'right', width: 320, resize: true, body: 'right', gutter: '5px', collapse: true, 
@@ -183,11 +183,14 @@ WireIt.WiringEditor.prototype = {
      var modules = this.modules;
      for(var i = 0 ; i < modules.length ; i++) {
         var module = modules[i];
-        var div = WireIt.cn('div', {className: "WiringEditor-module"});
         if(module.container.icon) {
+        	  var div = WireIt.cn('div', {className: "WiringEditor-icon-module"});
            div.appendChild( WireIt.cn('img',{src: module.container.icon}) );
         }
-        div.appendChild( WireIt.cn('span', null, null, module.name) );
+		  else {
+			  var div = WireIt.cn('div', {className: "WiringEditor-module"});
+        	  div.appendChild( WireIt.cn('span', null, null, module.name) );
+		  };
         var ddProxy = new WireIt.ModuleProxy(div, this);
         ddProxy._module = module;
         left.appendChild(div);
